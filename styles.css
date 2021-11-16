@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background-color: papayawhip;
+}
+
+.click, .mensaje, .siSabia{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.porfi{
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0, 400%);
+}
+
+.mensaje{
+    user-select: none;
+    font-size: 30px;
+    width: 400px;
+    height: 200px;
+    background: whitesmoke;
+    align-items: center;
+    text-align: center;
+    padding-top: 8%;
+    border: 1px solid #b3b3b3;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .2);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    
+}
+
+
+.mensaje .respuesta{
+    font-size: 18px;
+    color: rgb(167, 27, 27);
+    text-shadow: black;
+    opacity: 0;
+}
+
+.mensaje .btns{
+    margin: 30px ;
+}
+
+.btns .btn1, .btns .btn2{
+    background: indianred;
+    color: black;
+    padding: 10px 13px;
+    border: 1px solid #4d4b4b;
+    border-radius: 5px;
+    width: 50%;
+}
+
+
+.btns .btn2{
+    margin-left: 20px;
+    padding: 10px 18px;
+}
+
+.btns .btn1{
+    background: #b3b3b3;
+    border: 1px solid #4d4b4b;
+}
+
+.btn1:hover{
+    transition: .5;
+    background: #dad4d4;
+}
+
+.btn2:hover{
+    background: rgb(218, 128, 128);
+}
+
+.siSabia{
+    user-select: none;
+    font-size: 25px;
+    width: 600px;
+    height: 200px;
+    background: whitesmoke;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    border: 1px solid #b3b3b3;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .2);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.siSabia .img{
+    padding: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #858181;
+}
